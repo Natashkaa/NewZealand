@@ -1,3 +1,18 @@
+@media (min-width: 700px) and (max-width: 800px) {
+    .about_desc div
+    {
+        font-size: 22px;
+        
+    }
+}
+@media (min-width: 200px) and (max-width: 700px) {
+    .about_desc div
+    {
+        font-size: 20px;
+        margin: 0
+    }
+}
+
 body{
     margin: 0;
     padding: 0
@@ -85,11 +100,3 @@ main{
     border: 1px solid white;
     border-radius: 10px;
 }
-
-@media (max-width: 900px) {
-    .about_desc 
-    {
-        font-size: 20px;
-        padding: 3% 10%;
-    }
-  }
