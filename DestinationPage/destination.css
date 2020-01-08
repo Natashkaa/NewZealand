@@ -1,0 +1,130 @@
+@media (min-width: 1000px){
+    .video {
+        height: 315px;
+        width: 560px;
+        border: 5px solid rgb(238, 238, 238);
+        background-color: rgb(238, 238, 238);;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .carousel_row{
+        height: 700px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    
+    .milford_description{
+        border-bottom: 1px solid rgb(228, 228, 228);
+    }
+    .video {
+        height: 300px;
+        width: 95%;
+        margin: 20px 0
+    }
+    .carousel_row{
+        height: 350px;
+        background-color: blue;
+    }
+}
+@media (min-width: 100px) and (max-width: 800px) {
+    
+    .milford_description{
+        border-bottom: 1px solid rgb(228, 228, 228);
+    }
+    .video {
+        height: 300px;
+        width: 95%;
+        margin: 20px 0
+    }
+    .carousel_row{
+        height: 190px;
+        background-color: blue;
+    }
+}
+@font-face{
+    font-family: Arial;
+    src: url("../MainPage/fonts/thin.ttf");
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(71, 82, 76);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left:0;
+    z-index: 100;
+}
+.header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Arial;
+}
+.header a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 26px;
+    cursor: pointer;
+}
+.header label{
+    padding: 5px 15px
+}
+.dots{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-top: -5px;
+}
+
+
+/*MILFORD*/
+.milford_row{
+    font-family: Arial;
+}
+.milford_description{
+    background-color: rgb(255, 255, 255);
+    vertical-align: middle;
+    z-index: -100;
+}
+.milford_hr{
+    width: 100px
+}
+.milford_video{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video {
+    border: 5px solid rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238);;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.video iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.image_container{
+    height: 100%;
+}
+.carousel{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+}
