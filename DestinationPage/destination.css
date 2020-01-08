@@ -8,13 +8,17 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     .carousel_row{
-        height: 700px;
+        height: 900px;
+        background-color: rgb(72, 197, 34);
+    }
+    .link_container a{
+        font-size: 20px;
     }
 }
 
 @media (min-width: 700px) and (max-width: 1000px) {
     
-    .milford_description{
+    .milford_description, .skycity_description, .hobbiton_description{
         border-bottom: 1px solid rgb(228, 228, 228);
     }
     .video {
@@ -23,23 +27,29 @@
         margin: 20px 0
     }
     .carousel_row{
-        height: 350px;
-        background-color: blue;
+        height: 400px;
+        background-color: rgb(72, 197, 34);
+    }
+    .link_container a{
+        font-size: 20px;
     }
 }
 @media (min-width: 100px) and (max-width: 800px) {
     
-    .milford_description{
+    .milford_description, .skycity_description, .hobbiton_description{
         border-bottom: 1px solid rgb(228, 228, 228);
     }
     .video {
-        height: 300px;
+        height: 255px;
         width: 95%;
         margin: 20px 0
     }
     .carousel_row{
-        height: 190px;
+        height: 300px;
         background-color: blue;
+    }
+    .link_container a{
+        display: none;
     }
 }
 @font-face{
@@ -91,18 +101,18 @@ body{
 
 
 /*MILFORD*/
-.milford_row{
+.milford_row, .skycity_row, .hobbiton_row{
     font-family: Arial;
 }
-.milford_description{
+.milford_description, .skycity_description, .hobbiton_description{
     background-color: rgb(255, 255, 255);
     vertical-align: middle;
     z-index: -100;
 }
-.milford_hr{
+.desc_hr{
     width: 100px
 }
-.milford_video{
+.milford_video, .skycity_video, .hobbiton_video{
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -121,10 +131,46 @@ body{
 }
 .image_container{
     height: 100%;
+    background-size: cover;
 }
 .carousel{
     height: 100%;
 }
-.carousel-inner{
+.carousel-inner,.carousel-item{
     height: 100%;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(71, 82, 76);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insta, .twitter, .facebook, .youtube, .plane{
+    height: 30px;
+    margin-right: 20px;
+}
+.icon_container{
+    display: inline-block;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.link_container{
+    display: inline;
+    vertical-align: bottom;
+}
+.link_container a{
+    vertical-align: bottom;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    line-height: normal;font-weight: lighter;
+}
+.link_container:hover{
+    text-decoration-line: underline;
 }

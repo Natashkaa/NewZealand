@@ -182,6 +182,9 @@ body{
     display: block;
     color: rgb(254, 255, 254)
 }
+.carousel-caption a{
+    color: white
+}
 
 /*FOOTER*/
 footer{
